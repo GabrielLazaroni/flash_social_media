@@ -14,7 +14,7 @@ def index(request):
     user_object = User.objects.get(username=request.user.username)
     user_profile = Profile.objects.get(user=user_object)
 
-    mypost = Post.objects.all()
+    my_post = Post.objects.all()
 
     user_following_list = []
     feed = []
